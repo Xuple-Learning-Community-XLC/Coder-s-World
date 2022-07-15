@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>A simple project to calculate mulitiples of two numbers</title>
+    <style>
+      p{color:black;
+        font-size:24px;
+        font-family:sans-serif}
+      button{color:white;
+        background-color:green;
+        padding: 5px;
+        border-radius:3px
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <p id="p1">0</p><br>
+          <p>Num 1</p> <input type="text" id="ipt1"><br><br>
+           <p>Num 2</p><input type="text" id="ipt2"><br><br>
+           <button onclick="print()">Answer</button>
+    </center>
+  <script>
+       function print() { 
+           var x = document.getElementById("ipt1").value;
+           var y = document.getElementById("ipt2").value;
+           var sum = x * y;
+         document.getElementById("p1").innerHTML=sum;
+     }
+        
+  </script>
+  </body>
+</html>
